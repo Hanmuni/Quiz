@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>HTML Quiz</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="script.js"> </script>
+</head>
+
+<body>
+    <div class="bg2">
+
+        <div class="box">
+            
+            <div class="logo-box"> <img src="img/logo.png"> </div>
+
+            <div id="greeting" class="bg1">
+
+                <div class="question-greet">
+                    <h1 style="font-weight: bolder;"> Herzlich Willkommen zum HTML Quiz </h1>
+                    <h2 style="font-weight: light;"> Stelle dich der Herausforderung ! </h2>
+                    <a href='#' class="start-btn" onclick="showQuestion()">START &ensp; <img src="img/arrow.png"> </a>
+                </div>
+
+            </div>
+
+            <div class="d-none bg2" id="question-box">
+
+            </div>
+
+            <div class="d-none bg2" id="quiz-finish">
+
+                <div class="center-box-finish">
+                    <div> <img class="finish-logo" src="img/finish-logo.png"> </div>
+                    <div style="font-weight: bolder;">
+                        <h1> Herzlichen Glückwunsch.</h1>
+                    </div>
+
+                    <div style="font-weight: bolder;">
+                        <h1> Das Quiz ist erfolgreich beendet.</h1>
+                    </div>
+
+                    <div id="right-questions" class="right-questions">
+
+                    </div>
+
+                    <div>
+                        <a href='https://www.facebook.com/' class="share-btn"> Teilen
+                            &ensp; <img src="img/share.png"> </a>
+
+                        <a href='#' id="replay-btn" class="replay-btn" onclick="replay()"> Wiederholen
+                            &ensp; <img src="img/replay.png"> </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
