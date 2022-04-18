@@ -15,25 +15,14 @@ body {
 .logo-box {
     display: flex;
     justify-content: center;
-    object-fit: cover;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 2vw;
+    height: 100%;
+    width: 20%;
     background-color: #27355D;
 }
 
 .logo-box img {
-    height: 26vh;
-    width: 8vw;
-    object-fit: contain;
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-
-.header-image {
-    height: 100vh;
-    width: 100vh;
-    object-fit: cover;
+    height: 150px;
+    margin: 8px;
 }
 
 .question-greet {
@@ -76,6 +65,7 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
 .question {
     display: flex;
     justify-content: center;
@@ -86,7 +76,6 @@ body {
 
 .center-box-question {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -112,28 +101,28 @@ body {
     background-color: #FFFFFF;
     color: black;
     text-decoration: none;
-    width: 50vw;
-    height: 15vh;
-    font-size: 1.5em;
+    width: 80%;
+    height: 20%;
+    font-size: 18px;
     border: none;
     margin: 8px;
 }
 
 .answer:hover {
     cursor: pointer;
-    background-color: rgb(241,243,244);
+    background-color: rgb(241, 243, 244);
 }
 
 .answer-letter {
     background-color: #D6D6D6;
     color: black;
     text-decoration: none;
-    margin: 3vh;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    font-size: 0.5em;
+    margin: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
 }
 
 .letter-box {
@@ -145,6 +134,7 @@ body {
 .answer-option {
     font-weight: bolder;
     font-size: 18px;
+    margin: 8px;
 }
 
 .question-status {
@@ -156,11 +146,11 @@ body {
 .next-btn {
     background-color: #173CE8;
     border-radius: 10px;
-    padding: 1vw;
+    padding: 8px;
     margin: 8px;
     color: white;
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 18px;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -179,7 +169,7 @@ body {
 }
 
 .right-questions {
-  color: #4EBF18
+    color: #4EBF18
 }
 
 .share-btn {
@@ -188,11 +178,11 @@ body {
     align-items: center;
     background-color: #173CE8;
     border-radius: 10px;
-    padding: 1vw;
+    padding: 8px;
     color: white;
-    font-size: 4vh;
+    font-size: 32px;
     text-decoration: none;
-    margin: 1vh;
+    margin: 8px;
 }
 
 .replay-btn {
@@ -201,119 +191,97 @@ body {
     justify-content: center;
     background-color: #173CE8;
     border-radius: 10px;
-    padding: 1vw;
+    padding: 8px;
     color: white;
-    font-size: 4vh;
+    font-size: 32px;
     text-decoration: none;
-    margin: 1vh;
+    margin: 8px;
 }
 
 @media(max-width: 500px) {
     .box {
         display: flex;
         flex-direction: column;
+        height: 100vh;
+    }
+
+    .question-greet {
+        font-size: 16px;
+        margin: 8px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .start-btn {
+        font-size: 16px;
     }
 
     .logo-box {
         display: flex;
+        height: 30%;
         justify-content: center;
-        width: 100vw;
-        height: 25vh;
-        padding: 8px;
-        object-fit: cover;
+        align-items: center;
+        width: 100%;
         background-color: #27355D;
     }
 
     .logo-box img {
-        width: 45vw;
+        width: 100px;
         object-fit: contain;
-        padding-left: 2vw;
-        padding-right: 2vw;
-    }
-
-    .question-greet {
-        height: 72vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.55em;
     }
 
     .bg1 {
-        background-image: url(img/brain.png);
-        width: 100vw;
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
+        text-align: center;
+    }
+
+    .bg2 {
+        background-color: #F7F7F7;
+        height: 100vh;
+        position: absolute;
+        top: 0;
     }
 
     .question {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bolder;
-        font-size: 0.8em;
-        padding: 3.5vw;
+        font-size: 16px;
+        text-align: center;
     }
-
-    .answer {
-        display: flex;
-        justify-content: normal;
-        align-items: center;
-        background-color: #FFFFFF !important;
-        color: black !important;
-        text-decoration: none;
-        width: 95vw;
-        height: 12vh;
-        font-size: 1em;
-    }
-
-
 
     .answer-letter {
-        background-color: #D6D6D6 !important;
-        color: black !important;
-        text-decoration: none;
-        margin: 3vh;
-        padding-left: 5.5vw;
-        padding-right: 5.5vw;
-        padding-top: 2vw;
-        padding-bottom: 1vw;
-        font-size: 10px;
+        font-size: 14px;
+        margin: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+
     }
 
     .answer-option {
-        font-weight: bolder;
-        font-size: 0.8em;
+        font-size: 16px;
+        margin: 8px;
     }
 
     .next-btn {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        background-color: #173CE8;
-        border-radius: 10px;
-        padding: 1vw;
-        color: white;
-        text-decoration: none;
-        font-size: 2vh;
-        top: 95.5vh;
-        right: 3vh;
-        padding-left: 3vw;
-        padding-right: 2vw;
+        font-size: 16px;
     }
+
+    .center-box-question {
+        margin-top: 8px;
+    }
+
+    .question-status {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     .finish-logo {
         display: none;
     }
 
     .center-box-finish {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 13vh;
-        font-size: 0.7em;
+        text-align: center;
+        font-size: 16px;
+        margin: 8px;
     }
 }
